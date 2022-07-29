@@ -36,14 +36,13 @@ for (var i = 0; i < workTime.length; i++){
     var calendar = moment($(workHour).text(),"hh:mm").format('HH')
 
     if (now > calendar) {
-        $("input").addClass("past");
-    } else if (now = calendar) {
-        $("input").addClass("present");
+        $(time[i]).addClass("past");
+    } else if (now == calendar) {
+        $(time[i]).addClass("present");
     } else {
-        $("input").addClass("future");
+        $(time[i]).addClass("future");
     }
 };
-
 
 // function when button is clicked
 $("button").on("click", function(event){
