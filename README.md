@@ -3,9 +3,9 @@ Website to enter events during work hours and save the evens for future review
 
 ## Links to the webpage and repository
 
-To access the website use [Day Planner](https://haruka08.github.io/Harukas-Portfolio/)
+To access the website use [Day Planner](https://haruka08.github.io/Day-Planner/)
 
-To access the GitHub repository use [GitHub Repository Day Planner](https://github.com/Haruka08/Harukas-Portfolio)
+To access the GitHub repository use [GitHub Repository Day Planner](https://github.com/Haruka08/Day-Planner)
 
 ## Content
 
