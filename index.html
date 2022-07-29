@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <!-- message when data is saved -->
+      <p id="alert"></p>
+
+      <!-- series of <div> to create a list consisting of time, input area, and save button -->
+      <div class="input-group time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="nine" type="time">09:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="nineAm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="0" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="ten" type="time">10:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="tenAm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="1" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="eleven">11:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="elevenAm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="2" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="twelve">12:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="twelvePm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="3" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="one">13:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="onePm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="4" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="two">14:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="twoPm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="5" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="three">15:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="threePm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="6" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="four">16:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="fourPm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="7" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text rounded-0 hour" style="width: 85px" id="five">17:00</span>
+        </div>
+        <input type="text" class="form-control rounded-0 row" aria-label="Username" aria-describedby="basic-addon1" id="fivePm">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary rounded-0 saveBtn" value="8" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- moment js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- js file -->
+    <script src="./assets/script.js"></script>
+
+  </body>
+</html>
